@@ -54,7 +54,7 @@ class VkUser():
             for elem in element.get('sizes'):
                 if elem.get("type") != "w":
                     elem.clear()
-                    list_info_photos.append(element)
+            list_info_photos.append(element)
         with open("photos_in_yandex_disk.json", "w") as file:
             json.dump(list_info_photos, file, ensure_ascii=False, indent=2)
 
